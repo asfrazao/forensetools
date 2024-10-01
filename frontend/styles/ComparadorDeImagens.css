@@ -1,0 +1,59 @@
+.comparador-container {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4caf50;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5em; /* Aumentando o tamanho do texto */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold; /* Negrito */
+}
+
+.result.success {
+    color: green;
+    font-size: 2em; /* Texto ainda maior para o sucesso */
+    font-weight: bold; /* Negrito */
+    opacity: 1; /* Removendo qualquer animação de opacidade */
+}
+
+/* Estilo para o resultado de imagens incompatíveis */
+.result.error {
+    color: red;
+    font-size: 2em;
+    font-weight: bold; /* Negrito */
+    animation: blink-error 1s step-start infinite; /* Piscar para erro */
+}
+
+/* Definindo a animação de piscar para erro (vermelho) */
+@keyframes blink-error {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Definindo a animação de piscar para erro (vermelho) */
+@keyframes blink-error {
+    50% {
+        opacity: 0;
+    }
+}

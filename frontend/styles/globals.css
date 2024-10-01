@@ -1,0 +1,125 @@
+/* styles/globals.css */
+
+/* Aplicar background a todo o site */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(250, 250, 250, 0.7), rgba(225, 223, 223, 0.67)), url('../../public/background1.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo do Header */
+.header {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo span {
+    color: #f4a460; /* Cor laranja */
+}
+
+/* Menu de Navegação */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f4a460; /* Cor laranja ao passar o mouse */
+}
+
+/* Estilo do Submenu */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.group:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 0.5rem 1rem;
+}
+
+.submenu li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+}
+
+.submenu li a:hover {
+    background-color: #f4a460; /* Fundo laranja ao passar o mouse */
+    color: #fff; /* Texto branco para contraste */
+}
+
+/* Botão de Logout */
+.login-button button {
+    background-color: #f4a460; /* Cor laranja */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px; /* Arredondar o botão */
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.login-button button:hover {
+    background-color: #d87f2f; /* Cor laranja mais escura ao passar o mouse */
+}

@@ -1,0 +1,112 @@
+/* Define o estilo principal do App */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Garante que o conteúdo comece do topo */
+  align-items: center;
+  position: relative; /* Para garantir que o conteúdo seja posicionado dentro do App */
+  z-index: 1; /* Garante que o App esteja acima do background */
+}
+
+/* Estilos do menu de navegação */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente para legibilidade */
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 2; /* Garante que o menu esteja visível acima do background */
+  position: relative; /* Garante que o menu seja posicionado dentro do App */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  color: orange;
+  background-color: rgba(255, 255, 255, 0.5); /* Fundo para o hover */
+  border-radius: 5px;
+}
+
+/* Estilo para a logo */
+.logo {
+  text-align: left; /* Alinha a logo à esquerda */
+  width: 100%; /* Ocupa toda a largura disponível */
+  margin-left: 20px; /* Adiciona um espaçamento para a esquerda */
+}
+
+.logo h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 2em;
+  color: black;
+}
+
+/* Estilos adicionais */
+button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+/* Estilo do background para o body */
+body {
+  background-image: url('/public/background.jpg'); /* Certifique-se de que o caminho está correto */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Garante que o root ocupe toda a altura disponível */
+#root {
+  height: 100%;
+  width: 100%;
+  position: relative; /* Para posicionar o conteúdo adequadamente */
+  z-index: 1; /* Garante que o conteúdo apareça acima do fundo */
+}
+
+/* Ajuste do contêiner para manter tudo alinhado */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo para a Home */
+.home {
+  width: 100%;
+  height: 100vh; /* Garante que o fundo cubra a altura total da viewport */
+  background: none; /* Remove o fundo para evitar sobreposição */
+  display: none; /* Oculta o conteúdo da Home */
+}

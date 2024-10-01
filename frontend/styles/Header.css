@@ -1,0 +1,91 @@
+/* Define o estilo do header */
+.header {
+    background-color: rgba(255, 255, 255, 0.8); /* Deixa o header visível com um fundo branco semi-transparente */
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100; /* Garante que o header esteja acima de outros elementos */
+}
+
+/* Estiliza o contêiner do header */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estiliza o logo */
+.logo h1 {
+    font-size: 24px;
+    color: black;
+}
+
+/* Estiliza o menu de navegação */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+/* Estiliza os itens do menu */
+.nav-links li {
+    margin-left: 20px;
+    position: relative;
+}
+
+/* Estiliza os links do menu */
+.nav-links li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+/* Efeito hover nos links */
+.nav-links li a:hover {
+    color: orange;
+}
+
+/* Estiliza o botão de login */
+.login-button button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo hover no botão de login */
+.login-button button:hover {
+    background-color: darkorange;
+}
+
+/* Estiliza o dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Exibe o dropdown ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estiliza os links dentro do dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Efeito hover nos links do dropdown */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
