@@ -6,7 +6,8 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(250, 250, 250, 0.7), rgba(225, 223, 223, 0.67)), url('../public/background1.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(250, 250, 250, 0.7), rgba(225, 223, 223, 0.67)), url('/background1.jpg') no-repeat center center/cover;
+    background-color: #f0f0f0; /* Cor de fallback */
     padding: 20px;
 }
 
@@ -16,7 +17,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: rgba(253, 252, 251, 0.8); /* Laranja semelhante aos botões */
+    background-color: rgba(253, 252, 251, 0.8);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -26,29 +27,14 @@
 /* Seção de boas-vindas */
 .welcomeSection {
     flex: 1;
-    background-color: #faf9f9; /* Laranja semelhante aos botões */
     padding: 8rem;
     color: #e7700c;
-    border-radius: 10px;
-    margin-right: 1rem;
     font-weight: bold;
-}
-
-.welcomeTitle {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-.welcomeSubtitle {
-    font-size: 1.5rem;
-    text-transform: uppercase;
 }
 
 /* Container do formulário de login */
 .loginFormContainer {
     flex: 1;
-    background-color: rgba(136, 135, 134, 0.8); /* Fundo laranja claro */
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -59,43 +45,18 @@
     width: 100%;
     max-width: 400px;
     margin: auto;
-    padding: 1rem;
 }
 
-.loginTitle {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ffffff; /* Deixa o título em branco para destacar */
-    margin-bottom: 0.5rem;
-}
-
-.accessSubtitle {
-    font-size: 0.9rem;
-    color: #ffffff; /* Deixa o subtítulo em branco para combinar */
-    margin-bottom: 1rem;
-    font-style: italic;
+.loginTitle, .accessSubtitle {
+    color: #e69249; /* Deixa o título em branco para destacar */
 }
 
 /* Grupo de entradas */
-.inputGroup {
-    margin-bottom: 1rem;
-}
-
-.label {
-    display: block;
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-    color: #ffffff; /* Deixa os rótulos em branco para combinar */
-}
-
 .input {
     width: 100%;
     padding: 0.75rem;
-    border: none;
-    border-radius: 30px; /* Campos arredondados */
+    border-radius: 30px;
     background-color: #e0e0e0;
-    font-size: 1rem;
-    color: #333;
 }
 
 /* Botão de Login */
@@ -105,43 +66,7 @@
     font-size: 1.2rem;
     color: white;
     background: linear-gradient(to bottom, #f4a460, #d87f2f);
-    border: none;
-    border-radius: 30px; /* Botão arredondado */
+    border-radius: 30px;
     cursor: pointer;
     margin-top: 1.5rem;
-    font-weight: bold;
-}
-
-.submitButton:hover {
-    background: linear-gradient(to bottom, #d87f2f, #f4a460);
-}
-
-/* Link para cadastro */
-.registerLink {
-    text-align: center;
-    color: #ffffff; /* Deixa o link em branco para combinar */
-    margin-top: 1rem;
-    cursor: pointer;
-    font-style: italic;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .loginContainer {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .welcomeSection {
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    .welcomeTitle {
-        font-size: 2rem;
-    }
-
-    .loginTitle {
-        font-size: 1.5rem;
-    }
 }
