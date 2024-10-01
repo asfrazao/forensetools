@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import LoginForm from '../components/LoginForm';
-import HomePage from '../components/Home'; // Página do conteúdo principal
+import HomePage from '../components/home'; // Página do conteúdo principal
 import Header from '../components/Header'; // Header que será exibido após o login
 
 export default function Index() {

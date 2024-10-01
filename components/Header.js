@@ -12,7 +12,7 @@ const Header = ({ isAuthenticated, onLogout }) => {
                 </div>
                 <nav className="nav-menu flex-1 text-center">
                     <ul className="nav-links inline-flex space-x-8">
-                        <li><Link href="/" className="hover:text-orange-500 font-bold uppercase">Home</Link></li>
+                        <li><Link href="/public" className="hover:text-orange-500 font-bold uppercase">Home</Link></li>
                         <li className="group relative">
                             <Link href="/ferramentas" className="hover:text-orange-500 font-bold uppercase">
                                 Ferramentas

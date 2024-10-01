@@ -6,7 +6,7 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(250, 250, 250, 0.7), rgba(225, 223, 223, 0.67)), url('../../public/background1.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(250, 250, 250, 0.7), rgba(225, 223, 223, 0.67)), url('../public/background1.jpg') no-repeat center center/cover;
     padding: 20px;
 }
 
