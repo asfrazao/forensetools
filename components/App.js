@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header'; // Certifique-se de que o caminho está correto
-import Home from './home';
+import Home from './Home';
 import ComparadorDeImagens from './ComparadorDeImagens';
 import Login from '../pages/login';
 
