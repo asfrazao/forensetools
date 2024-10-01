@@ -7,6 +7,8 @@ export default function Index() {
     // Estado para armazenar se o usuário está logado ou não
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
+    console.log('Componente Index foi renderizado');
+
     // Função para lidar com a autenticação
     const handleLogin = (username, password) => {
         // Verifica se o usuário e a senha são "admin" e "teste"
@@ -35,6 +37,7 @@ export default function Index() {
                 </>
             ) : (
                 <LoginForm onLogin={handleLogin} />
+
             )}
         </>
     );

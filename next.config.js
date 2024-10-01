@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    // Outros ajustes, se necessário...
+    reactStrictMode: false,
+    basePath: '',
+    trailingSlash: false,
 };
 
 module.exports = nextConfig;
