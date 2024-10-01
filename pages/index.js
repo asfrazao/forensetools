@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import LoginForm from '../components/LoginForm';
 import HomePage from '../components/home'; // Página do conteúdo principal
 import Header from '../components/Header'; // Header que será exibido após o login
