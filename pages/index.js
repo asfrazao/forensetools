@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 
-const LoginForm = dynamic(() => import('../components/LoginForm'), { ssr: false });
-const HomePage = dynamic(() => import('../components/Home'), { ssr: false });
-const Header = dynamic(() => import('../components/Header'), { ssr: false });
+const LoginForm = dynamic(() => import('../components/loginForm'), { ssr: false });
+const HomePage = dynamic(() => import('../components/home'), { ssr: false });
+const Header = dynamic(() => import('../components/header'), { ssr: false });
 
 export default function Index() {
     // Estado para armazenar se o usuário está logado ou não
