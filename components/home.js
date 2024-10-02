@@ -1,4 +1,4 @@
-// components/Home.js
+// components/home.js
 import React from 'react';
 
 const HomePage = () => {

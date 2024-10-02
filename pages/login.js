@@ -1,6 +1,6 @@
 // pages/login.js
-import Header from '../components/Header';
-import LoginForm from '../components/LoginForm';
+import Header from '../components/header';
+import LoginForm from '../components/loginForm';
 
 export default function Login() {
     return (

@@ -1,6 +1,6 @@
-// components/LoginForm.js
+// components/loginForm.js
 import { useState } from 'react';
-import styles from '../styles/LoginForm.module.css';
+import styles from '../styles/loginForm.module.css';
 
 const LoginForm = ({ onLogin }) => {
     // Estado para armazenar valores de nome de usuário e senha

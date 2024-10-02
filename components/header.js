@@ -1,4 +1,4 @@
-// components/Header.js
+// components/header.js
 import Link from 'next/link';
 
 const Header = ({ isAuthenticated, onLogout }) => {

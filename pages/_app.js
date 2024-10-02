@@ -1,6 +1,6 @@
 // frontend/pages/_app.js
 import '../styles/globals.css'; // Estilos globais
-import '../styles/Header.css';  // Importe o CSS do Header aqui
+import '../styles/header.css';  // Importe o CSS do Header aqui
 import Head from 'next/head';
 
 export default function MyApp({ Component, pageProps }) {

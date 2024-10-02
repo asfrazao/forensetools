@@ -1,4 +1,4 @@
-// src/ComparadorDeImagens.js
+// src/comparadorDeImagens.js
 import React, { useState, useEffect } from 'react';
 
 function ComparadorDeImagens() {
