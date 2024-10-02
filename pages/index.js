@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import LoginForm from '../components/LoginForm';
 import HomePage from '../components/Home'; // Página do conteúdo principal
 import Header from '../components/Header'; // Header que será exibido após o login
@@ -6,8 +6,13 @@ import Header from '../components/Header'; // Header que será exibido após o l
 export default function Index() {
     // Estado para armazenar se o usuário está logado ou não
     const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [isClient, setIsClient] = useState(false);
 
-    console.log('Componente Index foi renderizado');
+    // Verifica se estamos no cliente
+    useEffect(() => {
+        setIsClient(true);
+        console.log('Componente Index foi renderizado');
+    }, []);
 
     // Função para lidar com a autenticação
     const handleLogin = (username, password) => {
@@ -24,8 +29,10 @@ export default function Index() {
         setIsAuthenticated(false);
     };
 
-    // Sempre que a página for carregada, o estado de autenticação é falso por padrão,
-    // garantindo que o site sempre comece na tela de login.
+    // Conteúdo de fallback para renderização inicial
+    if (!isClient) {
+        return <div>Carregando...</div>;
+    }
 
     return (
         <>
@@ -37,7 +44,6 @@ export default function Index() {
                 </>
             ) : (
                 <LoginForm onLogin={handleLogin} />
-
             )}
         </>
     );
