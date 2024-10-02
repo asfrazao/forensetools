@@ -72,7 +72,7 @@ button:hover {
 
 /* Estilo do background para o body */
 body {
-  background-image: url('/public/background.jpg'); /* Certifique-se de que o caminho está correto */
+  background-color: white; /* Certifique-se de que o caminho está correto alefrazao*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
