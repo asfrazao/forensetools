@@ -12,7 +12,7 @@ export default function Index() {
 
     useEffect(() => {
         setIsClient(true);
-        console.log('Componente Index foi renderizado');
+        console.log('Componente Index foi renderizado!');
     }, []);
 
     // Função para lidar com a autenticação
